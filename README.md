@@ -109,3 +109,20 @@ This is a product-control mechanism, not a legal determination about whether a p
 ## Open source
 
 Apache-2.0.
+
+
+<!-- ALBUM-FORM-V011 -->
+
+## Human-friendly album editor
+
+WordPress now has a top-level **SUZY//WORLD** admin menu.
+
+Use **Add an album** for normal one-at-a-time reviews.
+
+The same importer/repository path is used by:
+
+- the WordPress form,
+- CSV / JSON bulk imports,
+- future authenticated API writes.
+
+This keeps entity identity, tags, review versioning, and deduplication consistent regardless of how a record enters the system.

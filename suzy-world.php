@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * Plugin Name: SUZY//WORLD
  * Description: Public, versioned knowledge graph and REST API for Suzy Easton's deliberately published worlds.
- * Version: 0.1.0
+ * Version: 0.1.1
  * Author: Suzy Easton
  * Text Domain: suzy-world
  */
@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('SUZY_WORLD_VERSION', '0.1.0');
+define('SUZY_WORLD_VERSION', '0.1.1');
 define('SUZY_WORLD_DB_VERSION', '1');
 define('SUZY_WORLD_FILE', __FILE__);
 define('SUZY_WORLD_PATH', plugin_dir_path(__FILE__));
