@@ -1,0 +1,6 @@
+.DS_Store
+dist/
+*.zip
+.env
+.env.*
+!.env.example

@@ -1,0 +1,23 @@
+{
+  "albums": [
+    {
+      "artist": "Example Artist",
+      "album": "Example Record",
+      "year": 2026,
+      "review": "Replace this with your actual review.",
+      "rating": null,
+      "tags": "genre:art-pop; production:negative space; personal:changed my playing",
+      "sonic_notes": "What do you hear in the recording?",
+      "favorite_tracks": ["Track One", "Track Four"],
+      "associations": ["another artist", "a film", "a memory"],
+      "lesson": "What did the record teach you?",
+      "cover_url": "",
+      "cover_credit": "",
+      "cover_creator": "",
+      "cover_source_url": "",
+      "cover_rights": "unknown",
+      "cover_rights_note": "",
+      "cover_display": false
+    }
+  ]
+}

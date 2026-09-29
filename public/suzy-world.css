@@ -1,0 +1,28 @@
+.suzy-world-albums{
+  --sw-bg:#090a0d;
+  --sw-panel:#111319;
+  --sw-ink:#f1eee7;
+  --sw-muted:#969ba6;
+  --sw-line:rgba(255,255,255,.14);
+  --sw-acid:#b8ff39;
+  --sw-violet:#aa8cff;
+  background:var(--sw-bg);
+  color:var(--sw-ink);
+  padding:clamp(28px,6vw,72px);
+  font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+}
+.sw-head{border-bottom:1px solid var(--sw-line);padding-bottom:24px;margin-bottom:28px}
+.sw-head p{font-size:11px;letter-spacing:.14em;color:var(--sw-acid)}
+.sw-head h2{font:900 clamp(38px,7vw,78px)/.9 Arial Black,Helvetica,sans-serif;letter-spacing:-.055em;margin:.2em 0}
+.sw-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px}
+.sw-card{background:var(--sw-panel);border:1px solid var(--sw-line);overflow:hidden}
+.sw-cover{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.sw-card-body{padding:18px}
+.sw-artist{color:var(--sw-violet);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 7px}
+.sw-card h3{font-size:22px;line-height:1.05;margin:0}
+.sw-year{color:var(--sw-muted);font-size:11px}
+.sw-review{font-family:Georgia,serif;font-size:16px;line-height:1.45}
+.sw-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.sw-tags span{border:1px solid var(--sw-line);padding:4px 7px;font-size:9px;color:var(--sw-acid)}
+.sw-credit{color:var(--sw-muted);font-size:9px;line-height:1.4;margin-top:14px}
+.sw-empty{color:var(--sw-muted)}

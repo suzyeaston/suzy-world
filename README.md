@@ -1,0 +1,111 @@
+# SUZY//WORLD
+
+**Public knowledge. Private intelligence.**
+
+SUZY//WORLD is the deliberately published knowledge layer for [SUZY//AI](https://github.com/suzyeaston/suzy-ai).
+
+It is an open-source WordPress plugin backed by normal WordPress MariaDB/MySQL storage.
+
+```text
+                    PRIVATE
+                   SUZY//AI
+                      │
+              explicit publish
+                      │
+                      ▼
+                    PUBLIC
+                 SUZY//WORLD
+                      │
+          ┌───────────┼───────────┐
+          ▼           ▼           ▼
+      WordPress      API         apps
+```
+
+The public database is not a dump of private AI memory.
+
+## First world: music
+
+The first importer handles:
+
+- artists
+- albums
+- versioned reviews
+- structured tags
+- relationships
+- cover-art metadata / rights notes
+- import history
+
+Exact duplicate reviews are ignored. Changed reviews become new versions.
+
+## REST API
+
+After activation:
+
+```text
+GET /wp-json/suzy-world/v1/schema
+GET /wp-json/suzy-world/v1/entities
+GET /wp-json/suzy-world/v1/entities/{uuid}
+GET /wp-json/suzy-world/v1/albums
+GET /wp-json/suzy-world/v1/tags
+```
+
+Authenticated administrator writes:
+
+```text
+POST /wp-json/suzy-world/v1/entities
+POST /wp-json/suzy-world/v1/statements
+POST /wp-json/suzy-world/v1/relationships
+POST /wp-json/suzy-world/v1/imports/albums
+```
+
+For external write clients, use a WordPress **Application Password** for the publishing account.
+
+## WordPress admin
+
+Go to:
+
+```text
+Tools → SUZY//WORLD
+```
+
+Upload album CSV or JSON.
+
+Imports default to **draft** unless you explicitly select Publish immediately.
+
+## Public album page
+
+Create a WordPress page and add:
+
+```text
+[suzy_world_albums]
+```
+
+## Database
+
+The plugin creates seven prefixed tables:
+
+```text
+sw_entities
+sw_statements
+sw_tags
+sw_entity_tags
+sw_relationships
+sw_assets
+sw_imports
+```
+
+WordPress adds the site's actual table prefix automatically.
+
+See [`docs/DATA-MODEL.md`](docs/DATA-MODEL.md).
+
+## Album artwork
+
+The database separates the image URL from its rights/credit metadata.
+
+An imported cover is not displayed merely because a URL exists. `display_ok` must be explicitly true.
+
+This is a product-control mechanism, not a legal determination about whether a particular image use is permitted.
+
+## Open source
+
+Apache-2.0.
