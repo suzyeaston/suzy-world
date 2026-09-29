@@ -62,15 +62,11 @@ For external write clients, use a WordPress **Application Password** for the pub
 
 ## WordPress admin
 
-Go to:
+Use the top-level **SUZY//WORLD** menu in WordPress admin.
 
-```text
-Tools → SUZY//WORLD
-```
+The main screen has a human-friendly **Add an album** form. CSV/JSON import remains available for bulk work.
 
-Upload album CSV or JSON.
-
-Imports default to **draft** unless you explicitly select Publish immediately.
+New entries can be saved as drafts or deliberately published.
 
 ## Public album page
 
@@ -126,3 +122,15 @@ The same importer/repository path is used by:
 - future authenticated API writes.
 
 This keeps entity identity, tags, review versioning, and deduplication consistent regardless of how a record enters the system.
+
+<!-- AI-RESEARCH-ENTRYPOINT -->
+
+## AI / research entry point
+
+For future research, continuation, or AI-assisted work, start with:
+
+- [`AI-CONTEXT.md`](AI-CONTEXT.md) — compact current project state and canonical architecture.
+- [`docs/research/README.md`](docs/research/README.md) — chronological research index.
+- [`docs/research/index.json`](docs/research/index.json) — machine-readable document manifest.
+
+Research notes are dated `YYYY-MM-DD-topic.md` so the design history remains reconstructable instead of being silently overwritten.

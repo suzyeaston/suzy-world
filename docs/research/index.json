@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "project": "SUZY//WORLD",
+  "canonical_repo": "https://github.com/suzyeaston/suzy-world",
+  "public_api": "https://www.suzyeaston.ca/wp-json/suzy-world/v1",
+  "updated": "2026-09-29",
+  "ai_entrypoint": "AI-CONTEXT.md",
+  "research_index": "docs/research/README.md",
+  "documents": [
+    {
+      "date": "2026-09-29",
+      "source_period": "2026-09-27 to 2026-09-29",
+      "path": "docs/research/2026-09-29-build-journal.md",
+      "type": "build-journal",
+      "status": "historical-current",
+      "keywords": [
+        "SUZY//AI",
+        "SUZY//WORLD",
+        "personal AI",
+        "knowledge graph",
+        "albums",
+        "WordPress",
+        "MariaDB",
+        "REST API",
+        "Appliance Latent Space",
+        "POP//CONTEXT"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "source_period": "2026-09-27 to 2026-09-29",
+      "path": "docs/research/2026-09-29-blog-seeds.md",
+      "type": "blog-seeds",
+      "status": "rough",
+      "keywords": [
+        "blog",
+        "personal AI",
+        "music",
+        "creative technology",
+        "AI sovereignty",
+        "toaster instrument"
+      ]
+    }
+  ]
+}
